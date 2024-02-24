@@ -1,0 +1,34 @@
+﻿<UserControl x:Class="FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.BasketPanel.Panels.BasketsPanelsWithProducts.RightPanelBasketsWithPaymentPanel.RightBasketPanelWithProducts"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.BasketPanel.Panels.BasketsPanelsWithProducts.RightPanelBasketsWithPaymentPanel"
+             mc:Ignorable="d" 
+             xmlns:commands ="clr-namespace:FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.Commands"            
+             d:DesignHeight="450" d:DesignWidth="800" Foreground="White" Margin="5">
+
+    <StackPanel>
+        <Border Background="Orange" BorderBrush="Black" CornerRadius="15" BorderThickness="2">
+            <StackPanel>
+                <TextBlock Text="Ваша корзина" FontSize="60" FontFamily="{StaticResource ValueFontFamilyVinqueRg}" HorizontalAlignment="Center"/>
+                <TextBlock Text="Доступно для покупки" FontSize="30" FontFamily="{StaticResource ValueFontFamilyVinqueRg}" HorizontalAlignment="Center" Margin="0 10 0 0"/>
+                <TextBlock Text="{Binding CountBoughtProducts}" FontSize="30" FontFamily="{StaticResource ValueFontFamilyCutOutOFFont}" HorizontalAlignment="Center" Margin="0 10 0 0" Foreground="Black"/>
+                <TextBlock Text="Общая стоимость заказа" FontSize="30" FontFamily="{StaticResource ValueFontFamilyVinqueRg}" HorizontalAlignment="Center" Margin="0 10 0 0"/>
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0 10 0 15">
+                    <TextBlock  Text="{Binding PriceBoughtProducts}" FontSize="30" VerticalAlignment="Center" FontFamily="{StaticResource ValueFontFamilyNK176}" Foreground="Black"/>
+                    <TextBlock Text="g" FontSize="30" FontFamily="{StaticResource ValueFontFamilyALSRubl}" VerticalAlignment="Center" Foreground="Black"/>
+                </StackPanel>
+            </StackPanel>
+        </Border>
+        <Button Content="Оплатить заказ"  Height="80" FontSize="30" Margin="0 10 0 0 " Command="commands:CommandStartRegistrationOrder.StartRegistrationOrder">
+            <Button.CommandBindings>
+                <CommandBinding Command="commands:CommandStartRegistrationOrder.StartRegistrationOrder" CanExecute="CanExecuteStartRegistrationOrder" Executed="ExecuteStartRegistrationOrder"/>
+            </Button.CommandBindings>
+        </Button>
+    </StackPanel>
+
+   
+      
+  
+</UserControl>

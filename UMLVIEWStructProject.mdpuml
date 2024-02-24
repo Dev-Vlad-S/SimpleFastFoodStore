@@ -1,0 +1,220 @@
+@startuml
+
+ FastFoodStore.BLL <--*  FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.MainVM
+FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.BasketPanel.Panels.BasketsPanelsWithProducts.RightPanelBasketsWithPaymentPanel.RightBasketPanelWithProducts <--* FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.BasketPanel.Panels.BasketsPanelsWithProducts.BasketsPanelWithProducts
+FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.BasketPanel.Panels.BasketsPanelsWithProducts.BasketsPanelWithProducts <--* FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.BasketPanel.BasketPanel
+FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.BasketPanel.BasketPanel <--*  FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.VMNavigation
+FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.ProductsPanels.SnacksPanel.SnacksPanel <--* FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.VMNavigation
+FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.ProductsPanels.SaucesPanel.SaucesPanel <--* FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.VMNavigation
+FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.ProductsPanels.RollsPanel.RollsPanel <--* FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.VMNavigation
+FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.ProductsPanels.PizzaPanel.PizzaPanel <--* FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.VMNavigation
+FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.VMNavigation <--* FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.MainVM
+FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.VMBaseModelNotifyUserControls <|-- FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.VMNavigation
+FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.VMBasket <--* FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.MainVM
+FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.VMBaseModelNotifyUserControls <|-- FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.VMBasket
+System.Collections.Specialized.INotifyCollectionChanged <|-- FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.VMBasket
+System.ComponentModel.INotifyPropertyChanged <|-- FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.VMBaseModelNotifyUserControls
+FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.VMBaseModelNotifyUserControls <|-- FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.MainVM
+FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.Models.ProductWPF <--* FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.MainVM
+FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.MappersWPFView.MapperProduct <--* FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.MainVM
+FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.MainVM <--* FastFoodStore.WPFView.MVVM.Windows.MainWindow.MainWindow
+
+
+package FastFoodStore.BLL{}
+
+class FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.BasketPanel.Panels.BasketsPanelsWithProducts.RightPanelBasketsWithPaymentPanel.RightBasketPanelWithProducts
+{
+        public VMBasket vmBasket
+        private MainVM mainVM
+        public RightBasketPanelWithProducts(MainVM mainVM)
+        private void CanExecuteStartRegistrationOrder(object sender, System.Windows.Input.CanExecuteRoutedEventArgs e)
+        private void ExecuteStartRegistrationOrder(object sender, System.Windows.Input.ExecutedRoutedEventArgs e)
+}
+
+
+class FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.BasketPanel.Panels.BasketsPanelsWithProducts.BasketsPanelWithProducts
+{
+        private LeftBasketPanelWithProducts leftBasketsPanelWithPotentialyBoughtProducts
+        private RightBasketPanelWithProducts rightBasketsPanelWithPotentialyBoughtProducts
+
+        public LeftBasketPanelWithProducts LeftBasketPanelWithProducts { get; } 
+        public BasketsPanelWithProducts(MainVM mainVM)
+}
+
+class FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.BasketPanel.BasketPanel
+{
+        private BasketsPanelWithProducts basketsPanelWithProducts
+        private EmptyBasketsPanelWithoutProducts basketPanelWithoutProducts
+        private BasketsPanelAfterPayment basketsPanelAfterPayment
+        private VMBasket vmBasket
+
+        public BasketsPanelWithProducts BasketsPanelWithProducts { get; }
+        public EmptyBasketsPanelWithoutProducts EmptyBasketsPanelWithoutProducts { get; }
+        public BasketsPanelAfterPayment BasketsPanelAfterPayment { get; }
+        public BasketPanel(MainVM mainVM)
+     
+        private void OnChangeListProducts(object? sender, NotifyCollectionChangedEventArgs e)
+}
+
+
+class FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.ProductsPanels.PizzaPanel.PizzaPanel
+{
+        private ObservableCollection<ProductWPF> pizzaProductsWPF
+        public PizzaPanel(ObservableCollection<ProductWPF> productsWPF, VMBasket vMBasket)
+}
+
+class FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.ProductsPanels.RollsPanel.RollsPanel
+{
+        private ObservableCollection<ProductWPF> rollsProductsWPF
+        public RollsPanel(ObservableCollection<ProductWPF> productsWPF, VMBasket vMBasket)
+}
+
+class FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.ProductsPanels.SaucesPanel.SaucesPanel
+{
+        private ObservableCollection<ProductWPF> saucesProductsWPF
+        public SaucesPanel(ObservableCollection<ProductWPF> productsWPF, VMBasket vMBasket)
+}
+
+class FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.ProductsPanels.SnacksPanel.SnacksPanel
+{
+        private ObservableCollection<ProductWPF> snacksProductsWPF
+        public SnacksPanel(ObservableCollection<ProductWPF> productsWPF, VMBasket vMBasket)
+}
+
+
+class FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.VMNavigation
+{
+        private MainVM _mainVM
+        public CommandNavigation UsePizzaPanel { get; private set; }
+        public CommandNavigation UseSaucesPanel { get; private set; }
+        public CommandNavigation UseRollsPanel { get; private set; }
+        public CommandNavigation UseSnacksPanel { get; private set; }
+        public CommandNavigation UseBasketPanel { get; private set; }
+
+        public VMNavigation(MainVM mainVM)
+        private void OnShowPizzaPanel(object parametr)
+        private void OnShowSaucesPanel(object parametr) 
+        private void OnShowRollsPanel(object parametr) 
+        private void OnShowSnacksPanel(object parametr) 
+        private void OnShowBasketPanel(object parametr)
+}
+
+interface System.Collections.Specialized.INotifyCollectionChanged
+{
+    event NotifyCollectionChangedEventHandler? CollectionChanged
+}
+
+
+class FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.VMBasket
+{
+        public ObservableCollection<ProductWPF> BasketProducts { get; set; }
+        public ObservableCollection<ProductWPF> BasketProductsForPayment { get; set; }
+        public event NotifyCollectionChangedEventHandler? CollectionChanged
+        private string countProductsInBasket
+        public string CountProductsInBasket { get; set; }
+        private string priceBoughtProducts
+        public string PriceBoughtProducts { get; set; }
+        private string countBoughtProducts
+        public string CountBoughtProducts { get; set; }
+        public MainVM MainVM { get; private set; }
+        public bool IsStatusProducts { get; set; }
+
+        public VMBasket(MainVM mainVM)
+        private void OnChangeCountProducts(object? sender, NotifyCollectionChangedEventArgs e)
+        public void ReCalculatePriceBoughtProducts()
+        public void ReCalculateCountBoughtProducts()
+        private string EndingCountBoughtProducts(int countBoughtProducts)
+}
+
+
+interface System.ComponentModel.INotifyPropertyChanged
+{
+        event PropertyChangedEventHandler? PropertyChanged
+}
+
+class FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.VMBaseModelNotifyUserControls
+{
+  public event PropertyChangedEventHandler? PropertyChanged
+  public void OnPropertyChanged([CallerMemberName] string prop = "")
+}
+
+
+class FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.MainVM
+{
+        private PizzaPanel pizzaPanel
+        public PizzaPanel PizzaPanel { get; }
+        private SaucesPanel saucesPanel
+        public SaucesPanel SaucesPanel { get; }
+        private RollsPanel rollsPanel
+        public RollsPanel RollsPanel { get; }
+        private SnacksPanel snacksPanel
+        public SnacksPanel SnacksPanel { get; }
+        private BasketPanel basketPanel
+        public BasketPanel BasketPanel { get; set; }
+
+        private VMNavigation vmNavigation
+        public VMNavigation VMNavigation { get; set; }
+
+        private object selectedProductPanel
+        public object SelectedProductPanel { get; set; } 
+        
+
+        private SourceData sourceData
+        public SourceData SourceData { get; }
+
+        private ObservableCollection<ProductWPF> productsWPF;
+        public ObservableCollection<ProductWPF> ProductsWPF { get; set; }
+
+        private VMBasket vmBasket;
+        public VMBasket VMBasket { get;}
+
+        private object topProductsPanel;
+        public object TopProductsPanel { get; set; }
+
+        private ObservableCollection<ProductWPF> collectionTopProducts;
+        public ObservableCollection<ProductWPF> CollectionTopProducts { get; set; }
+
+        public MainVM()
+        public void InitializeDataTopProductsPanel()
+}
+
+class FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.MappersWPFView.MapperProduct
+{
+  public {static} Models.ProductWPF? MapProductUp(BLL.Models.ProductMBLL Product)
+  public {static} BLL.Models.ProductMBLL MapProductDown(ProductWPF Product)
+}
+
+class FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.Models.ProductWPF 
+{
+  public int ProductWPFId { get; set; }
+  public string WPF_Product_Tag { get; set; }
+  public int WPF_Product_PurchasedCount { get; set; }
+  public int WPF_Product_CountInBasket { get; set; }
+  public string WPF_Product_ImagePath { get; set; }
+  public string WPF_Product_Name { get; set; }
+  public string WPF_Product_Descriptiont { get; set; }
+  public double WPF_Product_Price { get; set; }
+  public double WPF_Product_PriceOnCount { get; set; }
+}
+
+class FastFoodStore.WPFView.MVVM.Windows.MainWindow.MainWindow
+{
+  private ColorTheme colorTheme
+  public LogoButton BtnLogo
+  public TopProductsPanel TopProductsPanel
+  public PizzaButton BtnPizza
+  public SaucesButton BtnSauces
+  public RollsButton BtnRolls
+  public SnacksButton BtnSnacks
+  public BasketButton BtnBasket
+  public ContentControl ProdusctsPanel
+  
+  public object DataContext{get; set;}
+   
+  public MainWindow()
+  private void StoreWindow_SizeChanged(object sender, SizeChangedEventArgs e)
+  private void StoreWindow_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+  private void StoreWindow_Loaded(object sender, RoutedEventArgs e)
+}
+
+@enduml

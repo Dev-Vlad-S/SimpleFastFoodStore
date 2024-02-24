@@ -1,0 +1,36 @@
+@startuml
+
+FastFoodStore.DAL <--* FastFoodStore.BLL.SourceData
+FastFoodStore.BLL.ProductMBLL <--* FastFoodStore.BLL.SourceData
+FastFoodStore.BLL.MappersBLL.MapperProduct <--* FastFoodStore.BLL.SourceData
+
+package FastFoodStore.DAL{}
+
+class FastFoodStore.BLL.MappersBLL.MapperProduct
+{
+  public static BLL.Models.ProductMBLL MapProductUp(DAL.Models.ProductMDAL Product)
+  public static DAL.Models.ProductMDAL MapProductDown(BLL.Models.ProductMBLL Product)
+}
+
+class FastFoodStore.BLL.SourceData
+{
+  private readonly ContextDataObjectsSqliteDB contextDataObjectsSqliteDB;
+
+  public SourceData()    
+  public IEnumerable<BLL.Models.ProductMBLL> GetAllProductsFromDB()
+  public bool UpdatePurchasedCountProductsInDataSource(BLL.Models.ProductMBLL productMBLL)
+}
+
+class FastFoodStore.BLL.ProductMBLL
+{
+  public int ProductMBLLId { get; set; }  
+  public string MBLL_Product_Tag { get; set; } 
+  public int MBLL_Product_PurchasedCount { get; set; }
+  public string MBLL_Product_ImagePath { get; set; } 
+  public string MBLL_Product_Name { get; set; }
+  public string MBLL_Product_Descriptiont { get; set; }
+  public double MBLL_Product_Price { get; set; } 
+  public bool MBLL_Product_IsAvailability { get; set; } 
+}
+
+@enduml

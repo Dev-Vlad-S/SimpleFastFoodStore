@@ -1,0 +1,55 @@
+﻿<RadioButton x:Class="FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.ProductsPanels.TemplateCardProductForProductsPanels.TemplateCardProductProductsPanels"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             xmlns:commands ="clr-namespace:FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.Commands"            
+             Height="400" Width="390" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Center">
+    
+    <RadioButton.Style>
+        <Style TargetType="RadioButton" BasedOn="{StaticResource {x:Type ToggleButton}}">
+            <Style.Setters>
+                <Setter Property="Template">
+                    <Setter.Value>
+                        <ControlTemplate TargetType="RadioButton">
+                            <Border x:Name="OutBorder" Background="Transparent" CornerRadius="15" Margin="5">
+                                <Border x:Name="Frame" Background="White" CornerRadius="10" BorderBrush="Orange" BorderThickness="1.5" Padding="10" Margin="5">
+                                    <ContentPresenter HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+                                </Border>
+                            </Border>
+                            <ControlTemplate.Triggers>
+                                <Trigger Property="IsMouseOver" Value="True">
+                                    <Setter TargetName="OutBorder" Property="Background" Value="ForestGreen"/>
+                                </Trigger>
+                            </ControlTemplate.Triggers>
+                        </ControlTemplate>
+                    </Setter.Value>
+                </Setter>
+            </Style.Setters>
+        </Style>
+    </RadioButton.Style>
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Image x:Name="productImg" Grid.Row="0" Source="{Binding WPF_Product_ImagePath}"/>
+        <TextBlock Grid.Row="1" Text="{Binding WPF_Product_Name}"  FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"  FontFamily="{StaticResource ValueFontFamilyFiraSansExtraBold}" />
+        <TextBlock Grid.Row="2" Text="{Binding WPF_Product_Descriptiont}" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="WrapWithOverflow" TextAlignment="Center" FontFamily="{StaticResource ValueFontFamilyFiraSansUltraLight}" />
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
+            <TextBlock Text="{Binding WPF_Product_Price}" FontSize="30" Foreground="Blue" HorizontalAlignment="Center" VerticalAlignment="Center"  FontFamily="{StaticResource ValueFontFamilyNK176}"/>
+            <TextBlock Text="g" FontSize="28"  HorizontalAlignment="Center" VerticalAlignment="Center" FontFamily="{StaticResource ValueFontFamilyALSRubl}"/>
+        </StackPanel>
+        <Button Grid.Row="4" Content="В корзину" Command="commands:CommandAddingProductFromPanelInBasket.AddProductFromPanelInBasket">
+            <Button.CommandBindings>
+                <CommandBinding Command="commands:CommandAddingProductFromPanelInBasket.AddProductFromPanelInBasket" CanExecute="CanExecuteAddProductFromPanelInBasket" Executed="ExecuteAddProductFromPanelInBasket"/>
+            </Button.CommandBindings>
+            </Button>
+    </Grid>
+    
+</RadioButton>

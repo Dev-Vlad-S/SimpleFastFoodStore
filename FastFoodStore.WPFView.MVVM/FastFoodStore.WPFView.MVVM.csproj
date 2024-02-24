@@ -1,0 +1,240 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+ 
+
+  <ItemGroup>
+    <ProjectReference Include="..\FastFoodStore.BLL\FastFoodStore.BLL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="VisualElements\Resources\Fonts\*.ttf" />
+    <Resource Include="VisualElements\Resources\Fonts\*.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="VisualElements\Windows\MainWindow\Panels\BasketPanel\Panels\BasketsPanelWithoutProducts\Resources\Images\EmptyBasket.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\01MysnoyBum.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\02Fiesta.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\03SVetchinoyIpomidorami.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\04SSalyamiIshampinonami.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\05Gribnaya.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\06SBaytsami.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\07PepperoniChiz.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\08SBekonomIveshenkami.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\09VseISrazu.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\10MyasnoePlato.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\11_4syra.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\12PoDdomashnemu.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\13VetchinaIgriby.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\14Alkopchone.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\15Pepperoni.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\16Margarita.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\17ItalyancyVrossii.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\18Zhyulen.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\02SetHit.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\03SetPremium.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\04ChikenTeriyaki.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\05FiladelfiyaLight.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\06STunchom.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\07Yamato.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\08Imperator.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\09Bambito.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\10Kioto.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\11Fudziyama.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\12Miyagi.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\13Tayto.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\14Filadelfiya.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\15FiladelfiyaMiks.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\16FiladelfiyaChiz.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\17Kaliforniya.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\18Bonito.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\19Katana.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\20Cezar.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\21Shen.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\22Yakudza.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\23Sogurcom.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\24Slososem.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\25Sugrem.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Resources\Images\Logo.jpg" />
+  </ItemGroup>
+
+  
+
+  <ItemGroup>
+    <Resource Remove="VisualElements\Resources\Fonts\FiraSans-Bold.otf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="VisualElements\Windows\MainWindow\Buttons\BasketButton\Resources\Images\LogoBasket.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VisualElements\Windows\MainWindow\Buttons\LogoButton\Resources\Images\Logo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VisualElements\Windows\MainWindow\Buttons\PizzaButton\Resources\Images\LogoPizza.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VisualElements\Windows\MainWindow\Buttons\RollsButton\Resources\Images\LogoRoll.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VisualElements\Windows\MainWindow\Buttons\SaucesButton\Resources\Images\LogoSauce.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VisualElements\Windows\MainWindow\Buttons\SnacksButton\Resources\Images\LogoStreetFood.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VisualElements\Windows\MainWindow\Panels\BasketPanel\Panels\BasketsPanelWithoutProducts\Resources\Images\EmptyBasket.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="VisualElements\Windows\MainWindow\Resources\Images\Logo.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="VisualElements\Resources\Fonts\FiraSans-Bold.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\01MysnoyBum.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\02Fiesta.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\03SVetchinoyIpomidorami.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\04SSalyamiIshampinonami.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\05Gribnaya.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\06SBaytsami.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\07PepperoniChiz.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\08SBekonomIveshenkami.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\09VseISrazu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\10MyasnoePlato.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\11_4syra.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\12PoDdomashnemu.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\13VetchinaIgriby.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\14Alkopchone.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\15Pepperoni.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\16Margarita.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\17ItalyancyVrossii.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\PizzaPanel\Resources\Images\18Zhyulen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\01SetTeplyi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\02SetHit.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\03SetPremium.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\04ChikenTeriyaki.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\05FiladelfiyaLight.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\06STunchom.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\07Yamato.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\08Imperator.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\09Bambito.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\10Kioto.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\11Fudziyama.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\12Miyagi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\13Tayto.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\14Filadelfiya.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\15FiladelfiyaMiks.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\16FiladelfiyaChiz.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\17Kaliforniya.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\18Bonito.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\19Katana.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\20Cezar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\21Shen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\22Yakudza.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\23Sogurcom.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\24Slososem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\25Sugrem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Update="VisualElements\Resources\Fonts\FiraSans-BoldItalic.otf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
