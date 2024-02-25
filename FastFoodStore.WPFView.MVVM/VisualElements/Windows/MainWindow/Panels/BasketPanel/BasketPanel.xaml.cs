@@ -1,6 +1,5 @@
 ﻿using FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel;
 using FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.BasketPanel.Panels.BasketsPanelsWithProducts;
-using FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.BasketPanel.Panels.BasketsPanelsWithProducts.LeftPanelBasketsWithProducts.TemplateCardProductInBasket;
 using FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.BasketPanel.Panels.BasketsPanelWithoutProducts;
 using System.Collections.Specialized;
 using System.Windows.Controls;

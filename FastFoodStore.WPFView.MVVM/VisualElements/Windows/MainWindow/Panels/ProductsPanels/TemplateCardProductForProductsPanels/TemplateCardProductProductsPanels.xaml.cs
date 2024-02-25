@@ -1,7 +1,6 @@
 ﻿using FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.Models;
 using FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel;
 using FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Buttons.BasketButton;
-using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;

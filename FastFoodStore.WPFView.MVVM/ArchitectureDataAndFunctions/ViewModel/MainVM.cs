@@ -59,9 +59,9 @@ namespace FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel
             productsWPF = new ObservableCollection<ProductWPF>((sourceData.GetAllProductsFromDB()).Select(MapperProduct.MapProductUp).ToList());
             vmBasket = new VMBasket(this);
             pizzaPanel = new PizzaPanel(productsWPF, vmBasket);
-            saucesPanel = new SaucesPanel();
+            saucesPanel = new SaucesPanel(productsWPF, vmBasket);
             rollsPanel = new RollsPanel(productsWPF, vmBasket);
-            snacksPanel = new SnacksPanel();
+            snacksPanel = new SnacksPanel(productsWPF, vmBasket);
             basketPanel = new BasketPanel(this);
             vmNavigation = new VMNavigation(this);
             InitializeDataTopProductsPanel();

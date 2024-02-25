@@ -9,11 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFoodStore.BLL", "FastFo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FastFoodStore.WPFView.MVVM", "FastFoodStore.WPFView.MVVM\FastFoodStore.WPFView.MVVM.csproj", "{D9615DD4-5E57-471D-8C00-94CF410070E7}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Элементы решения", "Элементы решения", "{DC4B6F5A-7D5D-46E8-97AD-1047FB67642E}"
-	ProjectSection(SolutionItems) = preProject
-		UMLStructProject.mdpuml = UMLStructProject.mdpuml
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

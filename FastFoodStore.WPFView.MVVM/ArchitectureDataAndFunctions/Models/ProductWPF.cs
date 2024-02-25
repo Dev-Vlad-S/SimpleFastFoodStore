@@ -1,5 +1,4 @@
-﻿using FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel;
-
+﻿
 namespace FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.Models
 {
     public class ProductWPF 

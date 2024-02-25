@@ -1,8 +1,6 @@
-﻿using FastFoodStore.BLL;
-using FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.Models;
+﻿using FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.Models;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
-using System.Diagnostics;
 
 namespace FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel
 {

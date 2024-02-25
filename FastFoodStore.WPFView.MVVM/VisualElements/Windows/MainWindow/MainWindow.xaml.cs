@@ -4,8 +4,6 @@ using FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.Produc
 using FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.TopProductsPanel;
 using FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Resources.Styles;
 using System.IO;
-using System.Text.Json;
-using System.Text.Json.Serialization;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;

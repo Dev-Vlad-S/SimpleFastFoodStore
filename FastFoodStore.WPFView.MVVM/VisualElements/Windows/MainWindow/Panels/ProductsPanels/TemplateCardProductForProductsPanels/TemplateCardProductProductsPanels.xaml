@@ -33,13 +33,13 @@
     <Grid Background="White">
         <Grid.RowDefinitions>
             <RowDefinition Height="5*"/>
-            <RowDefinition Height="*"/>
+            <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Image x:Name="productImg" Grid.Row="0" Source="{Binding WPF_Product_ImagePath}"/>
-        <TextBlock Grid.Row="1" Text="{Binding WPF_Product_Name}"  FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"  FontFamily="{StaticResource ValueFontFamilyFiraSansExtraBold}" />
+        <TextBlock Grid.Row="1" Text="{Binding WPF_Product_Name}"  FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center"  FontFamily="{StaticResource ValueFontFamilyFiraSansExtraBold}" TextWrapping="WrapWithOverflow" TextAlignment="Center"/>
         <TextBlock Grid.Row="2" Text="{Binding WPF_Product_Descriptiont}" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" TextWrapping="WrapWithOverflow" TextAlignment="Center" FontFamily="{StaticResource ValueFontFamilyFiraSansUltraLight}" />
         <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Center">
             <TextBlock Text="{Binding WPF_Product_Price}" FontSize="30" Foreground="Blue" HorizontalAlignment="Center" VerticalAlignment="Center"  FontFamily="{StaticResource ValueFontFamilyNK176}"/>

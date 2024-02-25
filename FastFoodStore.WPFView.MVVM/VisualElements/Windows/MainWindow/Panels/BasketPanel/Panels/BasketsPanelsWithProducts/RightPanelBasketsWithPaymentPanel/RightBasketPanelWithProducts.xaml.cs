@@ -1,15 +1,6 @@
-﻿using FastFoodStore.BLL;
-using FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.MappersWPFView;
-using FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.Models;
+﻿using FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.MappersWPFView;
 using FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel;
-using System;
-using System.Collections.ObjectModel;
 using System.Windows.Controls;
-using FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.TopProductsPanel;
-using FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Buttons.LogoButton;
-using FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.ProductsPanels.TemplateCardProductForProductsPanels;
-using FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Resources.Styles;
-using System.Windows.Media;
 using System.Windows;
 
 namespace FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.BasketPanel.Panels.BasketsPanelsWithProducts.RightPanelBasketsWithPaymentPanel

@@ -1,28 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
+﻿using FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.Models;
+using FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel;
+using FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.ProductsPanels.TemplateCardProductForProductsPanels;
+using System.Collections.ObjectModel;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
+
 
 namespace FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.ProductsPanels.SaucesPanel
 {
-    /// <summary>
-    /// Логика взаимодействия для SaucesPanel.xaml
-    /// </summary>
     public partial class SaucesPanel : UserControl
     {
-        public SaucesPanel()
+        private ObservableCollection<ProductWPF> saucesProductsWPF;
+
+        public SaucesPanel(ObservableCollection<ProductWPF> productsWPF, VMBasket vMBasket)
         {
             InitializeComponent();
+
+            saucesProductsWPF = new ObservableCollection<ProductWPF>(productsWPF.Where(prod => prod.WPF_Product_Tag == "Sauces"));
+            foreach (ProductWPF product in saucesProductsWPF)
+            {
+                WrapLayoutSaucesProductsWPF.Children.Add(new TemplateCardProductProductsPanels(product, vMBasket));
+            }
         }
     }
 }

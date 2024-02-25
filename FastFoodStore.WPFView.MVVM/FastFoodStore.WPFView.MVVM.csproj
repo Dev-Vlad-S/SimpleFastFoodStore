@@ -63,6 +63,50 @@
     <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\23Sogurcom.png" />
     <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\24Slososem.png" />
     <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\25Sugrem.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\01SousSyrnyy.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\02SousKisloSladkiy.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\03SousChesnochnyy.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\04SousSoevyy.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\05Imbir.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\06Vasabi.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\07Sous1000ostrovov.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\08SousOstryy.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\09SousTartar.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\10SousSpaysi.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\11SousCezar.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\12SousSladkiy.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\13SousGrilBurger.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\14DzhemKklubnichnyy.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\01HrustikiSsyromIChesnokom.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\02BurgerTriSousa.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\03EvervesKola05l.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\04HrustikiSladkie.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\05Bifalyarus.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\06FrustyleLimon05l.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\07ChikenBayts.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\08PiccarollSCyplenkom.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\09ChernogolovkaBaykal05l.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\10ChikenBaytsFri.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\11PiccarollSKurochkoyKarri.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\12ChernogolovkaTarhun05l.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\13KartofelFriBolshoy.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\14PiccarollFirmennyy.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\15ChernogolovkaDyushes05l.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\16NaggetsyBolshie.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\17PiccarollMeksikanskiy.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\18Morsklyukva045l.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\19KartofelFriSbekonomIsousom.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\20PastaKarbonara.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\21MorsVishnya045l.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\22ZharenyySyrSbrusnichnymSousom.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\23PastaSKuriceyIgribami.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\24MorsChernosmorodinovyy045l.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\25KartofelPoDerevenski.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\26PastaSvetchinoyIgribami.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\27MorsOblepiha045l.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\28FishChips.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\29PastaBoloneze.png" />
+    <None Remove="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\30FrustaylApelsin05l.png" />
     <None Remove="VisualElements\Windows\MainWindow\Resources\Images\Logo.jpg" />
   </ItemGroup>
 
@@ -227,6 +271,141 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\RollsPanel\Resources\Images\25Sugrem.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\01HrustikiSsyromIChesnokom.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\02BurgerTriSousa.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\03EvervesKola05l.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\04HrustikiSladkie.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\05Bifalyarus.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\06FrustyleLimon05l.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\07ChikenBayts.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\08PiccarollSCyplenkom.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\09ChernogolovkaBaykal05l.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\10ChikenBaytsFri.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\11PiccarollSKurochkoyKarri.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\12ChernogolovkaTarhun05l.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\13KartofelFriBolshoy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\14PiccarollFirmennyy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\15ChernogolovkaDyushes05l.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\16NaggetsyBolshie.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\17PiccarollMeksikanskiy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\18Morsklyukva045l.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\19KartofelFriSbekonomIsousom.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\20PastaKarbonara.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\21MorsVishnya045l.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\22ZharenyySyrSbrusnichnymSousom.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\23PastaSKuriceyIgribami.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\24MorsChernosmorodinovyy045l.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\25KartofelPoDerevenski.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\26PastaSvetchinoyIgribami.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\27MorsOblepiha045l.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\28FishChips.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\29PastaBoloneze.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SnacksPanel\Resources\Images\30FrustaylApelsin05l.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\01SousSyrnyy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\02SousKisloSladkiy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\03SousChesnochnyy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\04SousSoevyy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\05Imbir.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\06Vasabi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\07Sous1000ostrovov.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\08SousOstryy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\09SousTartar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\10SousSpaysi.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\11SousCezar.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\12SousSladkiy.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\13SousGrilBurger.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="VisualElements\Windows\MainWindow\Panels\ProductsPanels\SaucesPanel\Resources\Images\14DzhemKklubnichnyy.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>

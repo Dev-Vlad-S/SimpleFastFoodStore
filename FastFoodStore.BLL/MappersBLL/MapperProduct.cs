@@ -1,5 +1,4 @@
-﻿
-namespace FastFoodStore.BLL.MappersBLL
+﻿namespace FastFoodStore.BLL.MappersBLL
 {
     public static class MapperProduct
     {

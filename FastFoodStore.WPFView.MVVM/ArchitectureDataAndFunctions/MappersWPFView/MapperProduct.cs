@@ -8,18 +8,24 @@ namespace FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.MappersWPFView
         {
             if (Product.MBLL_Product_IsAvailability)
             {
-                return new Models.ProductWPF()
+                Models.ProductWPF productWPF = new Models.ProductWPF();
+                productWPF.ProductWPFId = Product.ProductMBLLId;
+                productWPF.WPF_Product_Tag = Product.MBLL_Product_Tag;
+                productWPF.WPF_Product_PurchasedCount = Product.MBLL_Product_PurchasedCount;
+                productWPF.WPF_Product_CountInBasket = 0;
+                productWPF.WPF_Product_ImagePath = Product.MBLL_Product_ImagePath;
+                productWPF.WPF_Product_Name = Product.MBLL_Product_Name;
+                if(Product.MBLL_Product_Descriptiont != String.Empty)
                 {
-                    ProductWPFId = Product.ProductMBLLId,
-                    WPF_Product_Tag = Product.MBLL_Product_Tag,
-                    WPF_Product_PurchasedCount = Product.MBLL_Product_PurchasedCount,
-                    WPF_Product_CountInBasket = 0,
-                    WPF_Product_ImagePath = Product.MBLL_Product_ImagePath,
-                    WPF_Product_Name = Product.MBLL_Product_Name,
-                    WPF_Product_Descriptiont = Product.MBLL_Product_Descriptiont,
-                    WPF_Product_Price = Product.MBLL_Product_Price,
-                    WPF_Product_PriceOnCount = 0,
-                };
+                    productWPF.WPF_Product_Descriptiont = Product.MBLL_Product_Descriptiont;
+                }
+                else
+                {
+                    productWPF.WPF_Product_Descriptiont = "✪ ✪ ✪";
+                }
+                productWPF.WPF_Product_Price = Product.MBLL_Product_Price;
+                productWPF.WPF_Product_PriceOnCount = 0;
+                return productWPF;
             }
             else return null;
         }

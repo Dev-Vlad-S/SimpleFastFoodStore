@@ -1,6 +1,4 @@
 ﻿using FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel.Commands;
-using FastFoodStore.WPFView.MVVM.VisualElements.Windows.MainWindow.Panels.BasketPanel;
-using System.Diagnostics.Eventing.Reader;
 
 namespace FastFoodStore.WPFView.MVVM.ArchitectureDataAndFunctions.ViewModel
 {

@@ -1,7 +1,5 @@
 ﻿using FastFoodStore.DAL.DB.Providers.Sqlite;
 using FastFoodStore.BLL.MappersBLL;
-using FastFoodStore.DAL.Models;
-using Microsoft.EntityFrameworkCore;
 
 namespace FastFoodStore.BLL
 {
